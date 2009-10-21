@@ -1082,6 +1082,7 @@ module ActiveRecord
                                when nil, '(null)', '(NULL)'
                                  nil
                                else
+                                 # Match multiline defaults
                                  match_data = ci[:default_value].match(/\A\(+N?'?(.*?)'?\)+\Z/m)
                                  match_data ? match_data[1] : nil
                                end
