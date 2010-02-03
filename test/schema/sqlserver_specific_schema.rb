@@ -17,6 +17,7 @@ ActiveRecord::Schema.define do
     t.column :string_with_pretend_null_three, :string, :default => 'NULL'
     t.column :string_with_pretend_null_four, :string, :default => '(NULL)'
     t.column :string_with_pretend_paren_three, :string, :default => '(3)'
+    t.column :string_with_multiline_default, :string, :default => "Some long default with a\nnew line."
   end
   
   create_table :sql_server_chronics, :force => true do |t|
@@ -65,6 +66,7 @@ ActiveRecord::Schema.define do
   create_table :sql_server_edge_schemas, :force => true do |t|
     t.string :description
     t.column :bigint, :bigint
+    t.column :tinyint, :tinyint
   end
   
   execute "IF EXISTS (SELECT TABLE_NAME FROM INFORMATION_SCHEMA.VIEWS WHERE TABLE_NAME = 'customers_view') DROP VIEW customers_view"

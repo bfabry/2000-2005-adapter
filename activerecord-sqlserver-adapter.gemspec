@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
-  s.name     = "2000-2005-adapter"
-  s.version  = "2.2.21"
+  s.name     = "activerecord-sqlserver-adapter"
+  s.version  = "2.3.1"
   s.date     = "2009-09-10"
   s.summary  = "SQL Server 2000, 2005 and 2008 Adapter For Rails."
   s.email    = "ken@metaskills.net"
@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
     "autotest/discover.rb",
     "autotest/railssqlserver.rb",
     "autotest/sqlserver.rb",
+    "lib/activerecord-sqlserver-adapter.rb",
     "lib/active_record/connection_adapters/sqlserver_adapter.rb",
     "lib/active_record/connection_adapters/sqlserver_adapter/core_ext/active_record.rb",
     "lib/active_record/connection_adapters/sqlserver_adapter/core_ext/dbi.rb" ]
@@ -34,6 +35,7 @@ Gem::Specification.new do |s|
     "test/cases/inheritance_test_sqlserver.rb",
     "test/cases/method_scoping_test_sqlserver.rb",
     "test/cases/migration_test_sqlserver.rb",
+    "test/cases/named_scope_test_sqlserver.rb",
     "test/cases/offset_and_limit_test_sqlserver.rb",
     "test/cases/pessimistic_locking_test_sqlserver.rb",
     "test/cases/query_cache_test_sqlserver.rb",
@@ -43,6 +45,7 @@ Gem::Specification.new do |s|
     "test/cases/table_name_test_sqlserver.rb",
     "test/cases/transaction_test_sqlserver.rb",
     "test/cases/unicode_test_sqlserver.rb",
+    "test/cases/validations_test_sqlserver.rb",
     "test/connections/native_sqlserver/connection.rb",
     "test/connections/native_sqlserver_odbc/connection.rb",
     "test/migrations/transaction_table/1_table_will_never_be_created.rb",
